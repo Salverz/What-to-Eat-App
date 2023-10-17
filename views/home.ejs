@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <%- include('partials/head.ejs') %>
+    <title> What To Eat </title>
+  </head>
+<body>
+	<h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+  <%- include('partials/nav.ejs') %>
+  <div class="font-effect-shadow-multiple"><div id="welcome"> Welcome </div></div>
+  <div id="locationHead"><h2>Current location: <%= locationName %></h2></div>
+  <br>
+  <div id="main">
+    <div class="section2">
+      <h4 class="font-effect-shadow-multiple">Featured Recipe</h4>
+      <div class="card">
+        <img src="<%=image2%>">
+        <div class="container">
+          <a target="_blank" href="<%=url2%>"><h5 class="font-effect-shadow-multiple"><b><%= title2 %></b></h5></a>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h4 class="font-effect-shadow-multiple">Featured Recipe</h4>
+      <div class="card">
+        <img src="<%=image%>"> 
+        <div class="container">
+          <a target="_blank" href="<%=url%>"><h5 class="font-effect-shadow-multiple"><b><%= title %></b></h5></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+    
+    <!-- Included foot -->
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

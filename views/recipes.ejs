@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <title> Recipes </title>
+</head>
+
+<body>
+  <h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+  <%- include('partials/nav.ejs') %>
+        
+  <h1>Recipes</h1>
+  
+    <!-- Render found recipes -->
+    
+    <% recipes.forEach(recipe => { %>
+      <div class = "card3">
+
+        <!-- title -->
+        <div id ="recipeTitle"><h2><%= recipe.title %></h2></div>
+        
+        <!-- recipe image -->
+          <div id="rImage"><img src="<%= recipe.image %>"></div> 
+
+        <% 
+          let price = 0;
+          recipe.missedIngredients.forEach(ingredient => {
+            if (products[ingredient.name].products[0] != undefined) {
+              price += products[ingredient.name].products[products[ingredient.name].use].price;
+            }
+          });
+          price = parseFloat(price.toFixed(2));
+        %>
+
+           <!-- display price -->
+        <div id = "Iprice"><h3>Total price: $<%= price %></h3>
+          <p><%= recipe.likes %> Likes</p>
+        </div>
+
+        <!-- save recipe button -->
+        <form method="POST" action="/saveRecipe">
+        <input type="hidden" name="recipeName" value="<%= recipe.title %>">
+        <input type="hidden" name="image" value="<%= recipe.image %>">
+        <input type="hidden" name="likes" value="<%= recipe.likes %>">
+        <button class ="recipeButton">Save recipe</button>
+          <br>
+        
+        
+        <br>
+          
+        <!-- create div -->
+        <div id = "youHave">
+        <h3>Ingredients you have</h3>
+        <ul>
+            <% recipe.usedIngredients.forEach(ingredient => { %>
+            <li><b><%= ingredient.name %> - <%= ingredient.amount %><%= ingredient.unit == "" ? "" : " " + ingredient.unit %></b></li>
+              <br>
+            <% }); %>
+        </ul>
+        </div>
+          <!-- create div -->
+              <div id = "toBuy">
+        <h3>Ingredients to buy</h3>
+        <ul>
+            <% recipe.missedIngredients.forEach(ingredient => { 
+              const p = products[ingredient.name] %>
+            <li>
+              <b><%= ingredient.name %> - <%= ingredient.amount %><%= ingredient.unit == "" ? "" : " " + ingredient.unit %></b>
+                <br>
+              <% if (p.products[p.use] != undefined) { %>
+                <p><%= p.products[p.use].amount %> <%= p.products[p.use].name %> - $<%= p.products[p.use].price %></p>
+                <img class="productImage" src="<%= p.products[p.use].image %>">
+                <br>
+                    <form action="/ingredient/selector" method="POST">
+                        <input type="hidden" value="<%= ingredient.name %>" name="name">
+                        <input type="hidden" value=" <%= JSON.stringify(products[ingredient.name]) %>" name="productList">
+                        <button class="chooseAlternative" id="<%= ingredient.name %>"> Choose Alternative </button>
+                    </form>
+                  <% } %>
+            </li>
+            <% }); %>
+        </ul>
+        </div>
+            </div>
+        
+    <% }); %>
+        <!-- add option for whether to ignore typical pantry items, such as water, salt, flour, etc. -->
+        <!-- let user pick how many results to show (1-100) -->
+  
+  
+  <%- include('partials/footer.ejs') %>
+  <script>
+  </script>
+</body>
+</html>

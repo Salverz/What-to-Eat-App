@@ -1,0 +1,398 @@
+body {
+/* background:lightblue; */
+  font-family:Tahoma;
+}
+
+#welcome {
+  font-size:100px;
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+}
+
+#changeLocation {
+  text-align:center;
+}
+
+h1 {
+  margin:6px;
+  text-align: center;
+  color:tan;
+  font-family: "Sofia", sans-serif;
+  font-size: 75px;
+  text-shadow: 3px 3px 3px #ababab;
+  padding-top: 15pt;
+  padding-bottom:10pt;
+  border-style: solid;
+  border-color:ivory;
+  height: 100px;
+  /* background: rgb(198,230,227);  */
+  background: radial-gradient(circle, rgba(198,230,227,1) 15%, rgba(217,235,198,1) 100%);
+}
+
+button {
+  background-color: white;
+  text-align:center;
+  color: black;
+  font-weight:bold;
+  border:3px solid #96b7b4;
+  transition-duration: 0.4s;
+  padding-top:15px;
+  padding-bottom:10px;
+  width:100px;
+  border-radius:8px;
+}
+
+button:hover {
+  background-color: #cbe1df; /* Green */
+  color: white;
+}
+
+#tabs {
+  width: 100%;
+  height: 35px;
+  white-space: nowrap;
+  overflow-x: auto;
+  border-style: solid;
+  text-align: center;
+}
+
+#loginBody {
+  margin:5px;
+  background: radial-gradient(circle, rgba(198,230,227,1) 15%, rgba(217,235,198,1) 100%);
+  border-style: solid;
+  border-color: #cbe1df;
+  border-radius: 4px;
+}
+
+#mainNav{
+	list-style-type: none;
+	margin-top: 5px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #cbe1df;
+}
+
+.navTabs{
+	float:left;
+	display: block;
+	text-align: center;
+	padding:14px;
+	text-decoration:none;
+}
+
+.navTabs2 {
+	float:right;
+	display: block;
+	text-align: center;
+	padding:14px;
+	text-decoration:none;
+}
+
+#welcome {
+  padding-left:20px;
+  font-size:70px;
+  border: dashed;
+  border-color:#cbe1df;
+  color:tan;
+}
+
+#welcomeLogin {
+  padding-left:20px;
+  float:left;
+  font-size:20px;
+  border-color:#cbe1df;
+  color:tan;
+}
+#welcomeLogin2 {
+  padding-left:10px;
+  float:left;
+  font-size:30px;
+  border-color:#cbe1df;
+  color:tan;
+  font-family: "Sofia", sans-serif;
+}
+
+#current {
+  float : right;
+}
+
+#recipeTitle {
+  margin-top:3%;
+  padding-top:10px;
+  text-align:center;
+  font-size:25px;
+  border-color:#cbe1df;
+  color:tan;
+  font-family: "Sofia", sans-serif;
+}
+
+#locationHead {
+  color:tan;
+  
+}
+
+#rImage {
+  text-align:center;
+  margin-top:10px;
+}
+
+#youHave {
+  text-align:center;
+}
+
+#toBuy {
+  text-align:center;
+}
+
+h4 {
+  font-size:30px;
+  color:tan;
+  font-family: "Sofia", sans-serif;
+  background: radial-gradient(circle, rgba(198,230,227,1) 15%, rgba(217,235,198,1) 100%);
+}
+
+h5 {
+  background: linear-gradient(white, white) padding-box,
+              radial-gradient(circle, rgba(217,235,198,1) 15%,rgba(198,230,227,1) 100%);
+  border-radius: 8px;
+  border: 10px solid transparent;
+  font-size:30px;
+  color:tan;
+  font-family: "Sofia", sans-serif;
+}
+
+#create {
+  text-align: center;
+}
+#createNew {
+  font-size:25px;
+  /* font-family: Tahoma, Verdana, sans-serif; */
+  color:tan;
+}
+#login{
+  padding-top:15%;
+  text-align:center;
+  font-size:25px;
+}
+
+#createN{
+  padding-top:15px;
+  text-align:center;
+  font-size:25px;
+}
+h2 {
+  text-align:center;
+  font-family:"Sofia";
+}
+.active{
+	float:left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding:14px;
+	text-decoration:none;
+	background-color:#f1e6d4;
+}
+.tab {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  height: 80%;
+  /* border-style: solid; */
+}
+
+#main {
+  /* width: 100%;
+  height: 300px; */
+  white-space: nowrap;
+  overflow-x: auto;
+  /* border-style: solid; */
+  text-align: center;
+}
+
+.mainButtons {
+  margin-left:0px;
+  height: 50px;
+   background: radial-gradient(circle, rgba(198,230,227,1) 15%, rgba(217,235,198,1) 100%);
+  width: 95%;
+  padding-left:0;
+}
+
+.recipeButton {
+  margin-left:30%;
+  height: 50px;
+  border-color: radial-gradient(circle, rgba(198,230,227,1) 15%, rgba(217,235,198,1) 100%);
+  width: 40%;
+  margin-top:15px;
+  /* padding-left:15px; */
+}
+
+.section {
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  margin-left:7%;
+  /* height: 80%; */
+  /* border-style: solid; */
+}
+
+.section2 {
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  /* height: 80%; */
+  /* border-style: solid; */
+}
+
+#split {
+  background: linear-gradient(white, white) padding-box,
+              radial-gradient(circle, rgba(217,235,198,1) 15%,rgba(198,230,227,1) 100%);
+  border-radius: 8px;
+  border: 10px solid transparent;
+  /* margin:15px;
+  padding-top:15px;
+  padding-left: 95px;
+  padding-right:95px;
+  padding-bottom:95px; */
+  text-align:center;
+  font-size:25px;
+  /* margin-bottom:100%;
+  height: 200px; */
+}
+
+#split2 {
+  background: linear-gradient(white, white) padding-box,
+              radial-gradient(circle, rgba(217,235,198,1) 15%,rgba(198,230,227,1) 100%);
+  border-radius: 8px;
+  border: 10px solid transparent;
+  margin:15px;
+  padding-top:15px;
+  padding-left: 95px;
+  padding-right:95px;
+  padding-bottom:30%;
+  font-size:26px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-top:30px;
+  margin-left:15%;
+  width:70%;
+  border:8px;
+}
+
+.card3 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-top:30px;
+  margin-left:15%;
+  width:70%;
+  border:8px;
+  border-radius:8px;
+  background: radial-gradient(circle, rgba(198,230,227,1) 15%, rgba(217,235,198,1) 100%);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  text-align:center;
+}
+
+/* Make all product images on recipe page the same size */
+.productImage {
+  height: 100px;
+  margin-top: 10px;
+}
+
+
+.selectProductImage{
+  height:100px;
+  padding-left:35px;
+}
+
+/* #ingredientSelectDIV{
+    display:flex;
+} */
+
+.col-auto{
+  display: block;
+  margin: auto;
+  width: 33%;
+  /* border: 1px solid #ccc; */
+}
+
+.row{
+  display: flex;
+  margin: 0 auto;
+  width: 100vw;
+  flex-direction: row;   
+}
+
+.productSelectLink{
+  text-decoration:none;
+  text-align:center; 
+}
+
+#priceNamt{
+  /* background-color:yellow; */
+  width:150px
+}
+
+/* styling navigation links */
+
+nav{
+  text-align:center;
+  font-family:cursive;
+}
+
+nav li:hover{
+  /* background-color:green; */
+  background-color:#f1e6d4;
+  /* font-size:1.2em;
+  transition:.1s; */
+}
+
+nav a{
+  text-decoration:none;
+}
+
+footer {
+  text-align:right;
+  font-family:cursive;
+  font-weight:bold;
+  font-size:10px;
+  margin-top:50px;
+}
+
+#logo {
+  float:left;
+  width:5%;
+  height:5%;
+}
+
+#Iprice {
+  text-align:center;
+  /* padding-left:20%; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.chooseAlternative {
+  margin: 10px;
+}

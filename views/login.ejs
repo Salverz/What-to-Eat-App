@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head.ejs') %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title> What To Eat </title>
+</head>
+  <!-- maybe a row of food images btwn header and tabs -->
+<body>
+	<h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+
+  <div class="card2">
+  <div id="loginBody">
+   <div id="welcomeLogin"><h2>Welcome to... </h2></div>
+    <div id="welcomeLogin2"><h2 class="font-effect-shadow-multiple">What To Eat </h2></div>
+    
+  <div id="login">
+  <form action="/login" method="POST">
+    Please log in to start <br><br>
+    Username: <input name="username"> <br>
+    Password: <input name="password" type="password"> <br><br>
+    <button>LOGIN</button><br>
+  </form>
+    <br>
+  <form action="/login/create">
+    Don't have an account? Click here to create one!<br><br>
+    <button>Create account</button><br><br>
+  </form>
+  </div>
+  </div>
+  </div>
+  <br>
+      <!-- Included foot -->
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
+
+<!-- https://www.npmjs.com/package/sha.js -->

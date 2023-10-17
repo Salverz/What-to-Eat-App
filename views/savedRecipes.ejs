@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head.ejs') %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title> What To Eat </title>
+</head>
+<body>
+   
+        
+	<h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+     <%- include('partials/nav.ejs') %>
+       
+  <% recipes.forEach(recipe => { %>
+    <h2><%= recipe.name %></h2>
+    <div id = "rImage"><img src="<%= recipe.image %>">
+    <p>Likes: <%= recipe.likes %></p></div>
+  <% }); %>
+  
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>

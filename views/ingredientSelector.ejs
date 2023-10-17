@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title> Ingredient Selector </title>
+        
+</head>
+<body>
+  <h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+     <%- include('partials/nav.ejs') %>
+       
+  <div id="ingredientSelectDIV" class="row">
+    <% const productList = JSON.parse(products);
+    for (let i = 0; i < productList.products.length; i++) { %>
+      <div class="col-auto">
+        <form action="/ingredient/select" method="POST">
+          <input name="id" type="hidden" value="<%= i %>">
+          <input name="name" type="hidden" value="<%= name %>">
+          <button class="productSelectLink" id="<%= productList.products[i].name %>">
+        </form>
+        <p class="productSelectName"><%= productList.products[i].name %></p></button>
+        <br>
+        <img class="selectProductImage" src="<%= productList.products[i].image %>">
+        <div id="priceNamt"> <p>Price : <%= productList.products[i].price %>$</p>
+          <p>Amount : <%= productList.products[i].amount %></p>
+        </div>
+      </div>
+    <% } %>
+  </div>
+  <!-- Included foot -->
+  <%- include('partials/footer.ejs') %>
+  <script src="/script/ingredientSelect.js"></script> 
+</body>
+</html>
+

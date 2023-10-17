@@ -1,0 +1,48 @@
+<!-- This will be moved to another file later (probably a modal). This is for testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <%- include('partials/head.ejs') %>
+  <title> Pick Location </title>
+</head>
+<body>
+  <h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+  <%- include('partials/nav.ejs') %>
+       
+  <div id="createNew"><h2>Change Location</h2></div>
+  <div id="changeLocation">
+  <form action="/location/results" method="POST">
+    Zip: <input name="zip" type="number">
+    Radius (miles): <input name="radius" type="number" value=10 min=1 max=100>
+    Chain:
+    <select name="chain">
+      <option value="all">ALL CHAINS</option>
+      <% chains.forEach(chain => { %>
+        <option value="<%= chain.name %>"><%= chain.name %></option>
+      <% }); %>
+    </select>
+    <button>Find Locations</button>
+  </div>
+  </form>
+
+  
+  <!-- Render found locations -->
+  <% if (typeof(locations) != "undefined") {
+    locations.forEach(location => { %>
+      <div class="location">
+      <a href="/setLocation?id=<%= location.locationId %>&name=<%= name=location.name%>">Choose this location</a> <br>
+      <b>Name:</b> <%= location.name %> <br>
+      <b>Chain:</b> <%= location.chain %> <br>
+      <b>Address:</b> <%= location.address.addressLine1 %>, <%= location.address.city %> <br><br>
+      </div>
+    <% })
+  } %>
+  
+  <script>
+  </script>
+
+          <!-- Included foot -->
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
