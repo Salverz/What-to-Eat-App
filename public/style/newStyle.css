@@ -1,0 +1,86 @@
+.site-header {
+    background-color: rgb(134, 134, 134);
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-family: "Sofia";
+    color: white;
+}
+
+#login-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login-card {
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-top: 100px;
+    padding: 50px 0px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(119, 119, 119);
+}
+
+.text-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(65, 65, 65);
+}
+
+.submit-button {
+    padding: 15px 60px;
+    background-color: rgb(69, 81, 255);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: rgb(17, 29, 197);
+}
+.submit-button:active {
+    transform: scale(90%);
+}
+
+.form-input {
+    margin-top: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+    width: 300px;
+    border-color: rgb(119, 119, 119);
+    transition: height 0.2s ease;
+}
+
+.form-input:focus {
+    height: 40px;
+}
+
+/* Center children horizontally and vertically */
+.center-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Tell element to take up all available space */
+.max-space {
+    height: 100%;
+    width: 100%;
+}
+
+/* Use highly blurred background for most pages to get frosted white effect */
+/* Use gradient style image on login page for frosted login window */

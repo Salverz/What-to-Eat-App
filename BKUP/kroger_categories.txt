@@ -1,0 +1,23 @@
+new Set([
+  'Beverages',
+  'Natural & Organic',
+  'Snacks',
+  'Breakfast',
+  'Produce',
+  'Health',
+  'Baking Goods',
+  'Baby',
+  'Adult Beverage',
+  'Cleaning Products',
+  'Condiment & Sauces',
+  'Beauty',
+  'Personal Care',
+  'Frozen',
+  'International',
+  'Deli',
+  'Home Decor',
+  'Candy',
+  'Kitchen',
+  'Garden & Patio',
+  'Dairy'
+])

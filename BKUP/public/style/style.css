@@ -1,0 +1,201 @@
+ /* style, nav, change location */
+
+/* body {
+  
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15pt;
+  border-style: solid;
+  height: 60px;
+}
+
+#tabs {
+    width: 100%;
+    height: 35px;
+    white-space: nowrap;
+    overflow-x: auto;
+  border-style: solid;
+  text-align: center;
+}
+
+.tab {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 80%;
+    /* border-style: solid; */
+/* }
+
+#main {
+    width: 100%;
+    height: 300px;
+    white-space: nowrap;
+  padding: 15px;
+    overflow-x: auto;
+  border-style: solid;
+  text-align: center;
+}
+
+.section {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 80%;
+    border-style: solid;
+}  */
+
+ /* style, nav, change location */
+
+/* just in case issues i commented og */
+h1 {
+  margin:6px;
+  text-align: center;
+  color:tan;
+  font-family: "Sofia", sans-serif;
+  font-size: 75px;
+  text-shadow: 3px 3px 3px #ababab;
+  padding-top: 15pt;
+  padding-bottom:10pt;
+  border-style: solid;
+  border-color:ivory;
+  height: 100px;
+  /* background: rgb(198,230,227);  */
+  background: radial-gradient(circle, rgba(198,230,227,1) 15%, rgba(217,235,198,1) 100%);
+}
+
+button {
+  background-color: white;
+  text-align:center;
+  color: black;
+  font-weight:bold;
+  border:3px solid #96b7b4;
+  transition-duration: 0.4s;
+  padding-top:15px;
+  padding-bottom:10px;
+  width:100px;
+  border-radius:8px;
+}
+
+button:hover {
+  background-color: #cbe1df; /* Green */
+  color: white;
+}
+
+#tabs {
+  width: 100%;
+  height: 35px;
+  white-space: nowrap;
+  overflow-x: auto;
+  border-style: solid;
+  text-align: center;
+}
+
+#loginBody {
+  margin:5px;
+  border-style: solid;
+  border-color: #cbe1df;
+  border-radius: 4px;
+}
+
+#mainNav{
+	list-style-type: none;
+	margin-top: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #cbe1df;
+}
+
+.navTabs{
+	float:left;
+	display: block;
+	text-align: center;
+	padding:14px;
+	text-decoration:none;
+}
+.navTabs:hover:not(.active){
+	background-color:#f1e6d4;
+}
+#welcome {
+  font-size:40px;
+  /* font-family: Tahoma, Verdana, sans-serif; */
+  color:tan;
+}
+
+#create {
+  text-align: center;
+}
+#createNew {
+  font-size:25px;
+  /* font-family: Tahoma, Verdana, sans-serif; */
+  color:tan;
+}
+#login{
+  text-align:center;
+  font-size:25px;
+}
+h2 {
+  text-align:center;
+}
+.active{
+	float:left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding:14px;
+	text-decoration:none;
+	background-color:#f1e6d4;
+}
+.tab {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 80%;
+    /* border-style: solid; */
+}
+
+#main {
+    width: 100%;
+    height: 300px;
+    white-space: nowrap;
+  padding: 15px;
+    overflow-x: auto;
+  border-style: solid;
+  text-align: center;
+}
+
+.section {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 80%;
+    border-style: solid;
+}
+
+#split {
+  background: linear-gradient(white, white) padding-box,
+              radial-gradient(circle, rgba(217,235,198,1) 15%,rgba(198,230,227,1) 100%);
+  border-radius: 8px;
+  border: 10px solid transparent;
+  margin:15px;
+  padding-top:15px;
+  padding-left: 95px;
+  padding-right:95px;
+  padding-bottom:95px;
+  text-align:center;
+  font-size:25px;
+}
+
+#split2 {
+  background: linear-gradient(white, white) padding-box,
+              radial-gradient(circle, rgba(217,235,198,1) 15%,rgba(198,230,227,1) 100%);
+  border-radius: 8px;
+  border: 10px solid transparent;
+  margin:15px;
+  padding-top:15px;
+  padding-left: 95px;
+  padding-right:95px;
+  padding-bottom:30%;
+  font-size:26px;
+}

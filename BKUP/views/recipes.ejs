@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <title> Recipes </title>
+</head>
+
+<body>
+    <%- include('partials/nav.ejs') %>
+        
+  <h1>Recipes</h1>
+  
+    <!-- Render found recipes -->
+    <% recipes.forEach(recipe => { %>
+        <h2><%= recipe.title %></h2>
+        <img src="<%= recipe.image %>">
+        <h3>Total price: $10.57</h3>
+        <p>Ingredients you have:</p>
+        <ul>
+            <% recipe.usedIngredients.forEach(ingredient => { %>
+            <li><%= ingredient.name %> - <%= ingredient.amount %><%= ingredient.unit == "" ? "" : " " + ingredient.unit %></li>
+            <% }); %>
+        </ul>
+        <p>Ingredients to buy:</p>
+        <ul>
+            <% recipe.missedIngredients.forEach(ingredient => { %>
+            <li>
+              <%= ingredient.name %> - <%= ingredient.amount %><%= ingredient.unit == "" ? "" : " " + ingredient.unit %>
+                <p>2 fuji apple - $2.34</p>
+            </li>
+            <% }); %>
+        </ul>
+    <% }); %>
+        <!-- add option for whether to ignore typical pantry items, such as water, salt, flour, etc. -->
+        <!-- let user pick how many results to show (1-100) -->
+  
+  <script>
+  </script>
+          <!-- Included foot -->
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

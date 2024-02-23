@@ -1,0 +1,4 @@
+- let users pick multiple locations in case one store doesn't have a product
+- add option for whether to ignore typical pantry items, such as water, salt, flour, etc.
+- let user pick how many results to show (1-100)
+- let users disable ingredients so they won't be included in the search?

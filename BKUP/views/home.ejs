@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head.ejs') %>
+    <title> What To Eat </title>
+  </head>
+<body>
+	<!-- <%- include('partials/nav.ejs') %> -->
+	<h1> What To Eat</h1>
+  <div id="tabs">
+    <div class="tab">
+    <form action = "/enter/ingredients">
+      <button type="button"> Enter Ingredients</button>
+    </form>
+    </div>
+    <div class = "tab"> 
+    <form action = "/recipeIdeas">
+      <button type="button"> Find recipes </button>
+    </form>
+    </div>
+  <!-- <%- include('partials/footer.ejs') %> -->
+  </div>
+<br>
+  <div id="main">
+    <div class="section">Current on-sale Items
+    <div class="updateLater"><br>update later..</div>
+    </div>
+    <div class = "section"> Recipe Ideas 
+    <div class="updateLater"><br>update later..</div>
+    </div>
+    
+    <!-- Included foot -->
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

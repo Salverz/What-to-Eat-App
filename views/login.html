@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <link href="/public/style/newStyle.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Remove default browser styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title> What To Eat </title>
+</head>
+  <!-- maybe a row of food images btwn header and tabs -->
+<body id="login-page">
+  <div class="site-header">
+    <h1>What To Eat</h1>
+  </div>
+
+  <div class="center-contents">
+    <div id="login-card">
+      <form action="/login" method="POST">
+        <div class="text-input-group">
+          <label for="username">Username</label>
+          <input class="form-input" id="username" name="username">
+        </div>
+  
+        <div class="text-input-group">
+          <label for="password">Password</label>
+          <input class="form-input" id="password" name="password" type="password">
+        </div>
+        
+        <div class="center-contents">
+          <button class="submit-button">Login</button>
+        </div>
+        
+      </form>
+        <a href="/login/create">Don't have an account? Click here to create one!</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!-- https://www.npmjs.com/package/sha.js -->

@@ -1,0 +1,33 @@
+{
+    "Baking":["Baking Goods"],
+    "Health Foods":[""],
+    "Spices and Seasonings":["Baking Goods"],
+    "Pasta and Rice":["Pasta, Sauces, Grain"],
+    "Bakery/Bread":["Bakery"],
+    "Refrigerated":[""],
+    "Canned and Jarred":["Canned & Packaged"],
+    "Frozen":["Frozen"],
+    "Nut butters, Jams, and Honey":["Condiment & Sauces"],
+    "Oil, Vinegar, Salad Dressing":["Baking Goods", "Condiment & Sauces"],
+    "Condiments":["Condiment & Sauces"],
+    "Savory Snacks":["Snacks"],
+    "Milk, Eggs, Other Dairy":["Dairy"],
+    "Ethnic Foods":["International"],
+    "Tea and Coffee":["Natural & Organic", "Beverages"],
+    "Meat":["Deli", "Meat & Seafood"],
+    "Gourmet":[""],
+    "Sweet Snacks":["Candy"],
+    "Gluten Free":[""],
+    "Alcoholic Beverages":["Adult Beverage"],
+    "Cereal":["Breakfast"],
+    "Nuts":["Snacks"],
+    "Beverages":["Beverages"],
+    "Produce":["Produce"],
+    "Not in Grocery Store/Homemade":[""],
+    "Seafood":["Meat & Seafood"],
+    "Cheese":["Dairy"],
+    "Dried Fruits":["Snacks"],
+    "Bread":["Bakery"]
+}
+
+Nuts;Baking - multiple aisles in recipe ingredient
