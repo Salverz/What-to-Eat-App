@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head.ejs') %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title> Enter Ingredients </title>
+</head>
+<body>
+  <h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+<%- include('partials/nav.ejs') %>
+    
+  <div id="split">
+    <div id="createNew">
+      <h2>Add an ingredient</h2>
+    </div>
+    Enter Ingredient:
+  <input id="ingredient" type="text">
+  <button id="addIngredient">Enter</button><br>
+    Ignore pantry items like water, salt, flour, etc.? <input id="pantry" type="checkbox">
+  </div>
+  <div id="split2">
+    <h2>Your pantry:</h2>
+    <div id="ingredients">
+      <% ingredients.forEach(ingredient => { %>
+      <div id="<%= ingredient.ingredient %>">
+        <button class="removeIngredient" id="<%= ingredient.ingredient %>Del">Remove</button>
+        <%= ingredient.ingredient %>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+  <!-- let users disable ingredients so they won't be included in the search? -->
+  <script src="/script/ingredients.js"></script>
+      <!-- Included foot -->
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

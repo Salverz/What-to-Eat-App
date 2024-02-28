@@ -143,9 +143,7 @@ const resolveName = async (product) => {
 
 // Login page
 app.get('/', (req, res) => {
-  res.render('login', {
-    "loginFailed": false
-  });
+  res.render('login');
 });
 
 app.get('/home', auth, async (req, res) => {
@@ -270,9 +268,6 @@ app.post('/login', async (req, res) => {
   const rows = await executeSQL(sql, params);
   if (rows[0] == undefined) {
     console.log("login failed");
-    res.render("login", {
-      "loginFailed": true
-    });
   } else {
     console.log("login success");
     req.session.userId = rows[0].userId;
@@ -292,7 +287,7 @@ app.get('/logout', async (req, res) => {
 
 // Add new username and password to the database
 app.post('/createAccount', async (req, res) => {
-  if (req.body.password == req.body.loginConfirm) {
+  if (req.body.password == req.body.confirm) {
     const sql = `INSERT INTO accounts
                  (username, password)
                  VALUES (?, ?)`;

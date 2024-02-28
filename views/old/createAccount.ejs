@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <%- include('partials/head.ejs') %>
+    <title> What To Eat </title>
+  </head>
+  
+<body>
+	<h1 class="font-effect-shadow-multiple"> What To Eat </h1>
+  <br>
+  <div id="loginBody">
+  <div id="createNew"><h2>Create a new account</h2></div>
+  <div id="login">
+  <form action="/createAccount" method="POST">
+    Username: <input name="username"> <br>
+    Password: <input name="password" type="password"> <br>
+    Confirm Password: <input name="confirm" type="password"> <br><br>
+    <button>Create account</button><br><br>
+  </form>
+  <form action="/">
+    <button>Back to login</button><br><br>
+  </form>
+  </div>
+  </div>
+</body>
+</html>
+
+<!-- https://www.npmjs.com/package/sha.js -->

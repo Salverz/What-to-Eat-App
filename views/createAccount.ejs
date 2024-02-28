@@ -2,26 +2,40 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-    <%- include('partials/head.ejs') %>
-    <title> What To Eat </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Remove default browser styles -->
+    <link href="/style/newStyle.css" rel="stylesheet" />
+    <link href="/style/login.css" rel="stylesheet" />
+    <title> What to Eat </title>
   </head>
   
 <body>
-	<h1 class="font-effect-shadow-multiple"> What To Eat </h1>
-  <br>
-  <div id="loginBody">
-  <div id="createNew"><h2>Create a new account</h2></div>
-  <div id="login">
-  <form action="/createAccount" method="POST">
-    Username: <input name="username"> <br>
-    Password: <input name="password" type="password"> <br>
-    Confirm Password: <input name="confirm" type="password"> <br><br>
-    <button>Create account</button><br><br>
-  </form>
-  <form action="/">
-    <button>Back to login</button><br><br>
-  </form>
-  </div>
+  <div class="background-image"></div>
+  <%- include("partials/site-header.ejs") -%>
+
+  <div class="center-contents">
+    <div class="login-card">
+      <h2 class="login-form-head">Create a new account</h2>
+      <form class="login-form" action="/createAccount" method="POST">
+        <div class="text-input-group">
+          <label for="username">Username</label>
+          <input class="form-input" id="username" name="username">
+        </div>
+        <div class="text-input-group">
+          <label for="password">Username</label>
+          <input class="form-input" id="password" name="password" type="password">
+        </div>
+        <div class="text-input-group">
+          <label for="passwordConfirm">Confirm password</label>
+          <input class="form-input" id="passwordConfirm" name="password-confirm" type="password">
+        </div>
+        <div class="button-container">
+          <button class="submit-button create-account-button" type="submit">Create account</button>
+          <a href="/"><button class="submit-button back-to-login-button" type="button">Back to login</button></a>
+        </div>
+      </form>
+        
+
+    </div>
   </div>
 </body>
 </html>
